@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/swiper-3.4.1.min.css"/>
+    <link rel="stylesheet" href="css/jump.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+</head>
+<body>
+<div class="header">
+    <div class="header_wrap">
+        <a class="logo" href="#"><img src="images/logo_zh.png" alt=""/></a>
+        <div class="language">
+            <img class="language_img" src="images/language_zh.png" alt=""/>
+            <span class="language_txt">简体中文</span>
+            <i></i>
+
+            <div class="language_list">
+                <p></p>
+                <ul>
+                    <li style="background-image:url(images/icon_gq_mg.png);" onclick="switch_lang('en')">English</li>
+                    <li style="background-image:url(images/icon_gq_zg.png);" onclick="switch_lang('zh')">简体中文</li>
+                </ul>
+            </div>
+        </div>
+        <form class="login" action="#">
+            <p>
+                <input type="text" class="login_name" placeholder=" 邮箱/手机"/>
+                <input type="text" class="login_pwd" placeholder=" 密码"/>
+                <input type="button" class="login_submit" value="登录"/>
+                <a href="#"  class="regist">未注册？</a>
+            </p>
+
+            <p class="login_help">
+                <input type="checkbox" id="auto_login"/><label for="auto_login" class="auto_login_txt">下次自动登录</label>
+                <a  class="forget_pwd" href="#">忘记密码？</a>
+            </p>
+        </form>
+        <p class="loginwith">
+            <span>合作网站登录</span>
+            <a href="#" class="face_bt"><img src="images/facebook.png" alt=""/></a>
+            <a href="#" class="twitter_bt"><img src="images/twitter.png" alt=""/></a>
+            <a href="#" class="weixin_bt"><img src="images/weixin.png" alt=""/></a>
+            <a href="#" class="qq_bt"><img src="images/qq.png" alt=""/></a>
+            <a href="#" class="more_bt"><img src="images/more.png" alt=""/></a>
+            <a href="#" class="share_bt"><img src="images/share.png" alt=""/></a>
+        </p>
+        <a href="#" class="help">
+            MyTotalWorld帮助中心
+        </a>
+    </div>
+</div>
+<div class="banner" style="width: 1500px;height: 300px;margin:0 auto;text-align: center;">
+    <div class="swiper-container banner_swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner1.jpg" alt="img" style="width: 100%;"/>
+                <!--<h2>致力印刷 引领行业</h2>-->
+            </div>
+            <div class="swiper-slide"><img src="images/banner2.jpg" alt="img" style="width: 100%;"/>
+                <!--<h2>设备先进 质量保证</h2>-->
+            </div>
+            <div class="swiper-slide"><img src="images/banner1.jpg" alt="img" style="width: 100%;"/>
+                <!--<h2>致力印刷 引领行业</h2>-->
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <!--<div class="swiper-pagination"></div>-->
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev" style="left:26px; background-image: url(images/banner_bt1.png);"></div>
+        <div class="swiper-button-next" style="right:26px;background-image: url(images/banner_bt2.png);"></div>
+    </div>
+    <!--<img class="banner_bg" src="images/banner_bg.png" alt=""/>-->
+</div>
+
+<div class="content">
+    <ul class="sect_img restwrap">
+        <li>
+            <img src="images/set_img1_zh.jpg" usemap="#map1" alt=""/>
+            <map name="map1" id="map1">
+                <area shape="rect" coords="34,416,168,466" href="#" target="_blank" alt="Sun"/>
+                <area shape="rect" coords="180,416,314,466" href="#" target="_blank" alt="Sun"/>
+                <area shape="rect" coords="328,416,460,466" href="#" target="_blank" alt="Sun"/>
+            </map>
+        </li>
+        <li style="background: #eae6e3;">
+            <div class="jump">
+                <img src="images/1.png" alt="" class="yi"/>
+                <img src="images/2.png" alt="" class="er"/>
+                <img src="images/3.png" alt="" class="san"/>
+                <img src="images/4_zh.png" alt="" class="si"/>
+                <img src="images/5.png" alt="" class="wu"/>
+                <img src="images/set_img2_zh.png" alt="" class="liu"/>
+            </div>
+            <!--<img src="images/set_img2_zh.jpg" usemap="#map2" alt=""/>-->
+            <!--<map name="map2" id="map2">-->
+                <!--<area shape="rect" coords="0,0,490,490" href="#" target="_blank" alt="Sun"/>-->
+            <!--</map>-->
+        </li>
+        <li class="delright">
+            <img src="images/set_img3_zh.jpg" usemap="#map3" alt=""/>
+            <map name="map3" id="map3">
+                <area shape="rect" coords="0,0,490,490" href="#" target="_blank" alt="Sun"/>
+            </map>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <p class="sitemark">MyTotalWorld网络购物商城专注为您打造工厂直销最优价格购物体验。</p>
+
+    <p class="sitemark">汇集所有社交应用，尽享一站式购物交友！</p>
+
+    <div class="Copyright">Copyright @ 2014 MyTotalWorld Ltd. 版权所有。用户协议 及 隐私权保护规则。</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<!--<script type="text/javascript" src="js/swiper-3.4.1.min.js"></script>-->
+<script type="text/javascript" src="js/swiper-3.4.1.jquery.min.js"></script>
+<script type="text/javascript" src="js/jump.js"></script>
+<script>
+    $('.language').hover(function () {
+        $(this).find('.language_list').show();
+    }, function () {
+        $(this).find('.language_list').hide();
+    });
+    $('.language_list').hover(function () {
+        $(this).show();
+    }, function () {
+        $(this).hide();
+    })
+
+    /*轮播图效果*/
+    var swiper1 = new Swiper('.banner_swiper', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoplay:3000,
+        loop : true,
+        effect:'slide'
+    });
+    $('.banner').hover(function () {
+        swiper1.stopAutoplay();
+    }, function () {
+        swiper1.startAutoplay();
+    });
+    /**
+     *切换语言按钮
+     * @param {'en'|'zh'} 语言类型参数
+     */
+    function switch_lang(language) {
+        $('.language_txt').html(language == 'en' ? 'English' : '简体中文');
+        //进行相应操作
+        /*替换中英文图片*/
+        $('img').each(function (i) {
+            var sOringLunguage = language == 'en' ? 'zh' : 'en';
+            if (this.src.indexOf('_' + sOringLunguage + '.')>=0) {
+                $(this).attr('src', this.src.replace('_' + sOringLunguage + '.', '_' + language + '.'));
+            }
+        });
+        /*以下内容到时候做国际化就不需要了*/
+        /*help文字*/
+        $('.help').html(language == 'en' ? 'How to use MyTotalWorld' : 'MyTotalWorld帮助中心');
+        $('.login_name').attr('placeholder',language == 'en' ? 'Email/Mobile' : '邮箱/手机');
+        $('.login_pwd').attr('placeholder',language == 'en' ? 'Password' : '密码');
+        $('.login_submit').attr('value',language == 'en' ? 'Sign in' : '登录');
+        $('.regist').html(language == 'en' ? 'Resiste Now?' : '未注册？');
+        $('.auto_login_txt').html(language == 'en' ? 'Stay signin in?' : '下次自动登录？');
+        $('.forget_pwd').html(language == 'en' ? 'Forgot Password?' : '忘记密码？');
+        $('.loginwith span').html(language == 'en' ? 'Login With?' : '合作网站登录');
+        /*footer文字*/
+        var sHtmlZh = '<p class="sitemark">MyTotalWorld网络购物商城专注为您打造工厂直销最优价格购物体验。</p><p class="sitemark">汇集所有社交应用，尽享一站式购物交友！</p><div class="Copyright">Copyright @ 2014 MyTotalWorld Ltd. 版权所有。用户协议 及 隐私权保护规则。</div>';
+        var sHtmlEn = '<p class="sitemark">MyTotalWorld gives you access to exclusive manufacture pricing on your favorite items.</p><p class="sitemark">Plus one dashboard for your online social networks.</p><div class="Copyright">Copyright © 2016 MyTotalWorld Inc. All Rights Reserved.User Agreement, Privacy and Cookies.</div>';
+        $('.footer').html(language == 'en' ? sHtmlEn : sHtmlZh);
+
+
+
+    }
+</script>
